@@ -9,7 +9,6 @@ sudo dnf install epel-relase
 curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
 sudo dnf install neofetch
 sudo yum install neofetch
-cd neofetch-7.1.0
 sudo make install
 sudo dnf install NetworkManager-tui
 nmtui
