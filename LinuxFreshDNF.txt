@@ -9,12 +9,4 @@ cd neofetch-7.1.0
 sudo make install
 sudo dnf install NetworkManager-tui
 nmtui
-wget https://www.asty.org/cmatrix2/dist/cmatrix-1.2a.tar.gz
-tar xvzf ~/cmatrix-1.2a.tar.gz
-cd ~/cmatrix-1.2a
-aclocal
-autoconf
-automake -a
-./configure
-make
-sudo make install
+
