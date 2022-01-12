@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+sudo dnf install cockpit
+sudo systemctl enable --now cockpit.socket
+sudo firewall-cmd --add-service=cockpit
+sudo firewall-cmd --add-service=cockpit --permanent
+setterm -blank 30
+wget https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.zip
+cd neofetch-7.1.0
+sudo make install
+sudo dnf install NetworkManager-tui
+nmtui
+wget https://www.asty.org/cmatrix2/dist/cmatrix-1.2a.tar.gz
+tar xvzf ~/cmatrix-1.2a.tar.gz
+cd ~/cmatrix-1.2a
+aclocal
+autoconf
+automake -a
+./configure
+make
+sudo make install
