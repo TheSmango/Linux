@@ -7,11 +7,11 @@ sleep 1
 sudo wget https://www.asty.org/cmatrix2/dist/cmatrix-1.2a.tar.gz
 sleep 2
 echo "Now let's unpack the tar file"
-sudo tar xvzf ~/cmatrix-1.2a.tar.gz
+sudo tar xvzf cmatrix-1.2a.tar.gz
 sleep 1
 echo "We are switching directories now"
 sleep 3
-cd ~/cmatrix-1.2a
+cd cmatrix-1.2a
 echo "Now to make our file"
 sleep 3
 aclocal
